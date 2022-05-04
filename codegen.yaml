@@ -1,0 +1,10 @@
+schema: https://graphql-pokeapi.graphcdn.app
+documents: './src/**/*.graphql'
+generates:
+  ./src/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      withHooks: true
